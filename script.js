@@ -418,5 +418,125 @@ firstLetterOfLastName = lastName[0];
 console.log(firstLetterOfLastName)
 
 
+//Entender a imutabilidade das strings
+
+/*Em JavaScript, valores String são imutáveis, o que significa que elas não podem ser alteradas após serem criadas.
+
+Por exemplo, o código a seguir produzirá um erro porque a letra B na cadeia de caracteres Bob não pode ser alterada para a letra J:
+*/
+let myStr = "Bob";
+myStr[0] = "J";
+
+// Observe que isso não significa que myStr não possa ser reatribuída.A única forma de alterar myStr seria atribuindo a ela um novo valor, deste modo:
+
+let myStr = "Bob";
+myStr = "Job";
+
+// Corrija a atribuição para myStr para que contenha o valor Hello World(string) usando a abordagem mostrada no exemplo acima.
+
+/* Resposta */
+
+let myStr = "Jello World";
+
+myStr = "Hello World"; 
+
+/* 
+Usar notação de colchetes para encontrar o enésimo caractere em uma string
+Você também pode usar notação de colchetes para pegar caracteres em outras posições em uma string.
+
+    Lembre - se de que computadores começam contando do 0. Então, o primeiro caractere é na verdade o caractere na posição 0.
+
+Exemplo:
+*/
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+
+/*
+secondLetterOfFirstName teria o valor da string d.
+
+Vamos tentar definir thirdLetterOfLastName para ser igual a terceira letra da variável lastName usando notação de colchetes.
 
 
+// Configuração
+const lastName = "Lovelace";
+
+/*Altere apenas o código abaixo desta linha*/ 
+const thirdLetterOfLastName = lastName[2]; 
+
+// Altere esta linha
+
+/*Usar notação de colchetes para encontrar o último caractere em uma string
+Para pegar a última letra de uma string, você pode subtrair um do tamanho da string.
+
+Por exemplo, se const firstName = "Ada", você pode pegar o valor da última letra da string ao usar firstName[firstName.length - 1].
+
+Exemplo:
+*/
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+/*
+lastLetter teria o valor da string a.
+
+Use notação de colchetes para descobrir o último caractere na variável lastName.*/
+
+// Configuração
+const lastName = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+const lastLetterOfLastName = lastName[lastName.length - 1]; 
+
+/*
+Exemplo:
+
+Usar notação de colchetes para descobrir o enésimo caractere antes do último em uma string
+Você pode usar o mesmo princípio que nós acabamos de usar para recuperar o último caractere em uma string, para recuperar o enésimo caractere antes do último caractere.
+
+Por exemplo, você pode pegar o valor da antepenúltima letra da string const firstName = "Augusta" usando firstName[firstName.length - 3]
+
+*/
+
+const firstName = "Augusta";
+const thirdToLastLetter = firstName[firstName.length - 3];
+/*
+thirdToLastLetter teria o valor da string s.
+
+Use notação de colchetes para descobrir o penúltimo caractere na string lastName.*/
+
+// Configuração
+
+const lastName = "Lovelace";
+
+// Altere apenas o código abaixo desta linha
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+/*Preencher espaços em branco
+Você recebe frases com algumas palavras faltando, como substantivos, verbos, adjetivos e advérbios. Você então preencherá os pedaços faltantes com palavras de sua escolha de modo que a frase completa faça sentido.
+
+Considere a frase - Era realmente ____ e nós ____ nós mesmos ____. Essa frase possui três pedaços faltando - um adjetivo, um verbo e um advérbio, e nós podemos adicionar palavras de nossa escolha para completar. Em seguida, podemos atribuir a frase completa para uma variável como se segue:
+
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+Nesse desafio, nós fornecemos a você um substantivo, um verbo, um adjetivo e um advérbio. Você precisar formular uma frase completa usando palavras de sua escolha, junto com as palavras que nós fornecemos.
+
+Você precisará usar o operador de concatenação de string + para criar uma nova string, usando as variáveis fornecidas: myNoun, myAdjective, myVerb e myAdverb. Em seguida, você atribuirá a string formada para a variável wordBlanks. Você não deve alterar as palavras atribuídas às variáveis.
+
+Você também precisará se responsabilizar por espaços em sua string, para que na frase final possua espaços entre todas as palavras. O resultado não deve ser uma frase completa. */
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Altere apenas o código abaixo desta linha
+const wordBlanks = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+
+
+/* Armazenar múltiplos valores em uma variável usando arrays JavaScript
+Com as variáveis de array em JavaScript, podemos armazenar diversos dados em um único lugar.
+
+Você começa uma declaração de um array com a abertura de um colchetes, terminando com o fechamento do colchetes e colocando vírgulas entre cada entrada, dessa forma:
+
+const sandwich = ["peanut butter", "jelly", "bread"];
+Modifique o novo array myArray para que contenha uma string e um número (nessa ordem). */
+
+// Altere apenas o código abaixo desta linha
+const myArray = ["Marshall", 23];
